@@ -4,7 +4,7 @@
 //
 //  Created by Iyad Assaf on 22/06/2013.
 //
-//  Example software that sends control value data out to MIDI devices, this project is configured for use with the Livid Code.
+//  Example software that sends note and control value data out to MIDI devices, this project is configured for use with the Novation and Livid Code.
 //  Output MIDI data can be seen in external MIDI monitors.
 //
 //  MIDI DATA TYPE VALUES FOR REFERENCE (src = https://ccrma.stanford.edu/~craig/articles/linuxmidi/misc/essenmidi.html)
@@ -32,13 +32,14 @@
     MIDIClientRef           client;
     MIDIPortRef             outputPort;
     MIDIEndpointRef         midiOut;
+    int                     noteLimit;
     BOOL goingUp =          TRUE;
     BOOL goingUpNote =      TRUE;
     uint note =             0;
     uint velocity =         47;
-    int noteLimit;
     int velocityEnumerate = 1;
     int count =             0;
+
 
 int main(int argc, const char * argv[])
 {
