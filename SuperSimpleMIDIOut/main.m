@@ -4,11 +4,7 @@
 //
 //  Created by Iyad Assaf on 22/06/2013.
 //
-<<<<<<< HEAD
 //  Example software that sends note and control value data out to MIDI devices, this project is configured for use with the Novation and Livid Code.
-=======
-//  Example software that sends note and control MIDI data out to MIDI devices, this project is configured for use with the Novation Launchpad and the Livid Code.
->>>>>>> 11228dcdd4457fea4ca7ddcf02566c24bcbbe0f3
 //  Output MIDI data can be seen in external MIDI monitors.
 //
 //  MIDI DATA TYPE VALUES FOR REFERENCE (src = https://ccrma.stanford.edu/~craig/articles/linuxmidi/misc/essenmidi.html)
@@ -27,7 +23,6 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreMIDI/CoreMIDI.h>
-
 
 //Select if you want to output control or note data here. 
 #define IS_CONTROL_DATA FALSE
@@ -170,7 +165,7 @@ int main(int argc, const char * argv[])
                     if (count%2==0) {
                         velocity = 63;
                     } else {
-                        velocity = 127;
+                        velocity = 10;
                     }
                     note = note -1;
                 } else {
@@ -181,7 +176,7 @@ int main(int argc, const char * argv[])
             //Wait before beginning next cycle.
             if(IS_CONTROL_DATA==TRUE)
             {
-                [NSThread sleepForTimeInterval:0.00001];
+                [NSThread sleepForTimeInterval:0.0001];
                     } else {
                 [NSThread sleepForTimeInterval:0.01];
             }
