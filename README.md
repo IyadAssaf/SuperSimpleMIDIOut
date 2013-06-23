@@ -8,10 +8,7 @@ Made as a simple example to help others when starting to use the CoreMIDI framew
 
 
 
-
-
-
 | Note output on the Novation Launchpad:|Control output on the Livid Code:| 
 | ------------- |:-------------:| -----:|
-| ![Alt text](http://movingpartscreative.net/External%20Resources/SuperSimpleMIDIOutLP.gif "Note output") | ![Alt text](http://movingpartscreative.net/External%20Resources/SuperSimpleMIDIOutCode.gif "Control output") | 
-  
+| <img style="float:center" src="http://movingpartscreative.net/External%20Resources/SuperSimpleMIDIOutLP.gif" width="90%" height="90%" /> | <img style="float:center" src="http://movingpartscreative.net/External%20Resources/SuperSimpleMIDIOutCode.gif" width="90%" height="90%" /> | 
+
