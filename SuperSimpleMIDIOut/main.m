@@ -4,7 +4,7 @@
 //
 //  Created by Iyad Assaf on 22/06/2013.
 //
-//  Example software that sends control value data out to MIDI devices, this project is configured for use with the Livid Code.
+//  Example software that sends note and control MIDI data out to MIDI devices, this project is configured for use with the Novation Launchpad and the Livid Code.
 //  Output MIDI data can be seen in external MIDI monitors.
 //
 //  MIDI DATA TYPE VALUES FOR REFERENCE (src = https://ccrma.stanford.edu/~craig/articles/linuxmidi/misc/essenmidi.html)
